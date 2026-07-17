@@ -1,0 +1,4 @@
+interface:
+  display_name: "从会话初始化项目工作区"
+  short_description: "把当前会话方案沉淀为可开发工作区并自动创建私有 GitHub 仓库"
+  default_prompt: "使用 $init-project-workspace 将当前会话的已确认方案初始化为新项目工作区，并创建对应的 GitHub private 仓库。"
