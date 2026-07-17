@@ -1,0 +1,61 @@
+# Codex Skills
+
+## 目标
+
+集中维护个人常用的 Codex Skills。每个 Skill 都保持独立、可验证、可单独安装，避免已安装副本散落后难以同步。
+
+## 方案
+
+```text
+codex-skills/
+├── AGENTS.md
+├── README.md
+└── skills/
+    └── <skill-name>/
+        ├── SKILL.md
+        └── agents/
+            └── openai.yaml
+```
+
+仓库根目录只负责管理合集；每个 `skills/<skill-name>/` 才是一个完整 Skill。
+
+## 已收录 Skills
+
+| Skill | 用途 |
+| --- | --- |
+| [`init-project-workspace`](skills/init-project-workspace/) | 从当前会话提炼确认方案，初始化项目工作区并建立 GitHub 仓库 |
+
+## 使用
+
+克隆合集：
+
+```bash
+git clone git@github.com:gaixianggeng/codex-skills.git
+cd codex-skills
+```
+
+安装单个 Skill：
+
+```bash
+cp -R skills/init-project-workspace ~/.codex/skills/
+```
+
+如果目标目录已经存在，先比较差异并备份，不要直接覆盖正在使用的版本。
+
+## 新增或更新 Skill
+
+1. 在 `skills/<skill-name>/` 中创建或修改 Skill。
+2. 使用 Codex 的 `skill-creator` 维护 `SKILL.md` 和 `agents/openai.yaml`。
+3. 运行校验：
+
+   ```bash
+   python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/<skill-name>
+   ```
+
+4. 检查公开仓库中不包含令牌、密码、私有路径、内部资料或其他敏感信息。
+5. 提交并推送，再按需同步到本机安装目录。
+
+## 风险与优化
+
+- 仓库源码和 `~/.codex/skills/` 下的已安装副本可能产生版本漂移；以本仓库内容为源码基准。
+- 暂不增加复杂发布脚本或包管理机制。Skills 数量增多、手工同步成为真实问题后，再补充安装与同步工具。
