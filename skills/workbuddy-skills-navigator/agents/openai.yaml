@@ -1,0 +1,7 @@
+interface:
+  display_name: "WorkBuddy Skills 导航"
+  short_description: "按分类或单项选择并安装 WorkBuddy 公开市场 Skill"
+  default_prompt: "使用 $workbuddy-skills-navigator 浏览目录，先预览计划，再按我的选择安装 WorkBuddy Skills。"
+
+policy:
+  allow_implicit_invocation: false
