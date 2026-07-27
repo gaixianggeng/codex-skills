@@ -1,0 +1,2720 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-27",
+  "source": {
+    "repository": "infometa/workbuddyskills",
+    "url": "https://github.com/infometa/workbuddyskills",
+    "commit": "d3d5c70a431c571d2e2a2b3bba8ffc4bac802809",
+    "catalog_path": "CATALOG.md",
+    "notice": "第三方内容版权与许可归各原作者；安装前检查目标目录中的 LICENSE 和依赖。"
+  },
+  "categories": [
+    {
+      "id": "ai-agent",
+      "label": "AI / Agent 工具",
+      "count": 159
+    },
+    {
+      "id": "cloud-deploy",
+      "label": "云 / 存储 / 部署",
+      "count": 4
+    },
+    {
+      "id": "content-marketing",
+      "label": "内容 / 营销 / 媒体",
+      "count": 5
+    },
+    {
+      "id": "development",
+      "label": "开发 / 工程",
+      "count": 2
+    },
+    {
+      "id": "research-knowledge",
+      "label": "搜索 / 研究 / 知识",
+      "count": 15
+    },
+    {
+      "id": "finance-data",
+      "label": "数据 / 金融 / 股票",
+      "count": 6
+    },
+    {
+      "id": "docs-office",
+      "label": "文档 / 办公 / 协作",
+      "count": 44
+    },
+    {
+      "id": "tencent-wechat",
+      "label": "腾讯 / 微信 / 企微",
+      "count": 47
+    },
+    {
+      "id": "design-ui-map",
+      "label": "设计 / UI / 地图",
+      "count": 12
+    },
+    {
+      "id": "other",
+      "label": "其他",
+      "count": 1
+    }
+  ],
+  "skills": [
+    {
+      "id": "agent-browser-core",
+      "name": "agent-browser-core",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "OpenClaw skill for the agent-browser CLI (Rust-based with Node.js fallback) enabling A…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/agent-browser-core"
+    },
+    {
+      "id": "agent-mail",
+      "name": "agentmail",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Email inbox for AI agents. Check messages, send emails, and communicate via your own @…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`AGENTMAIL_API_KEY`、`YOUR_API_KEY`",
+      "source_path": "skills/agent-mail"
+    },
+    {
+      "id": "agent-mbti",
+      "name": "agent-mbti",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "AI Agent personality diagnosis and configuration system based on MBTI framework. Use w…",
+      "prerequisites": "无",
+      "source_path": "skills/agent-mbti"
+    },
+    {
+      "id": "agent-team-orchestration",
+      "name": "agent-team-orchestration",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, …",
+      "prerequisites": "无",
+      "source_path": "skills/agent-team-orchestration"
+    },
+    {
+      "id": "ai-shifu-course-creator",
+      "name": "ai-shifu-course-creator",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Use when the user works with AI-Shifu (AI师傅) courses in any capacity of creating, writ…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；需要环境变量：`SHIFU_TOKEN`",
+      "source_path": "skills/ai-shifu-course-creator"
+    },
+    {
+      "id": "aihot",
+      "name": "aihot",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "AI HOT (aihot.virxact.com) 中文 AI 资讯查询 Skill。当用户想知道\"今天 AI 圈有什么\"、\"AI 日报\"、\"AI HOT\"、\"AI 资讯\"、\"…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/aihot"
+    },
+    {
+      "id": "airchina-travel-assistant",
+      "name": "airchina-travel-assistant",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "帮用户领取中国国航（Air China / 国航 / 国际航空）的优惠券。当用户说\"我想领国航的券\"、\"帮我领张国航机票券\"、\"国航有活动券吗\"、\"给我发国航优惠券\"、\"airc…",
+      "prerequisites": "需要环境变量：`SECRET_KEY`",
+      "source_path": "skills/airchina-travel-assistant"
+    },
+    {
+      "id": "anti-distill",
+      "name": "anti-distill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Anti-distillation defense for employee Skills. Clean your skill files to look complete…",
+      "prerequisites": "无",
+      "source_path": "skills/anti-distill"
+    },
+    {
+      "id": "api-gateway",
+      "name": "api-gateway",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Connect to external services through Maton-managed API routes.",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`API_KEY`、`MATON_API_KEY`、`YOUR_API_KEY`",
+      "source_path": "skills/api-gateway"
+    },
+    {
+      "id": "apple-notes",
+      "name": "apple-notes",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, mo…",
+      "prerequisites": "无",
+      "source_path": "skills/apple-notes"
+    },
+    {
+      "id": "apple-reminders",
+      "name": "apple-reminders",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, de…",
+      "prerequisites": "无",
+      "source_path": "skills/apple-reminders"
+    },
+    {
+      "id": "arxiv-reader",
+      "name": "arxiv-reader",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "利用python，指定某个arxiv_id/url， 基于 LLM Agent 对这篇arxiv论文进行分类与深度阅读，直接print打印阅读笔记",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`LLM_API_KEY`",
+      "source_path": "skills/arxiv-reader"
+    },
+    {
+      "id": "arxiv-watcher",
+      "name": "arxiv-watcher",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Search and summarize papers from ArXiv. Use when the user asks for the latest research…",
+      "prerequisites": "无",
+      "source_path": "skills/arxiv-watcher"
+    },
+    {
+      "id": "autoresearch",
+      "name": "autoresearch",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Run Karpathy-style autoresearch optimization on any content. Generates 50+ variants, s…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`ANTHROPIC_API_KEY`",
+      "source_path": "skills/autoresearch"
+    },
+    {
+      "id": "awesome-design-md",
+      "name": "awesome-design-md",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Curated collection of 54 DESIGN.md files extracted from real developer-focused website…",
+      "prerequisites": "无",
+      "source_path": "skills/awesome-design-md"
+    },
+    {
+      "id": "baidu-drive",
+      "name": "baidu-drive",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "百度网盘(Baidu Drive)文件管理 — 上传、下载、转存、分享、搜索、移动、复制、重命名、创建文件夹。TRIGGER: 用户提及\\\"百度网盘/bdpan/网盘/云盘/ba…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/baidu-drive"
+    },
+    {
+      "id": "boss-skills",
+      "name": "boss-skills",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Distill a real boss into an AI skill, or generate a boss skill from famous entrepreneu…",
+      "prerequisites": "无",
+      "source_path": "skills/boss-skills"
+    },
+    {
+      "id": "brand-guidelines",
+      "name": "brand-guidelines",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that …",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/brand-guidelines"
+    },
+    {
+      "id": "browser",
+      "name": "browser",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Simple headless Puppeteer browser for rendering JavaScript-heavy pages and extracting …",
+      "prerequisites": "无",
+      "source_path": "skills/browser"
+    },
+    {
+      "id": "browser-cash",
+      "name": "browser-cash",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Cloud browser sessions via Browser.cash API that bypass anti-bot protections (Cloudfla…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`BROWSER_CASH_API_KEY`、`BROWSER_CASH_KEY`",
+      "source_path": "skills/browser-cash"
+    },
+    {
+      "id": "browser-use",
+      "name": "browser-use",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Automates browser interactions for web testing, form filling, screenshots, and data ex…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`BROWSER_USE_API_KEY`",
+      "source_path": "skills/browser-use"
+    },
+    {
+      "id": "cangjie-skill",
+      "name": "cangjie-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Distill a book into a coherent set of executable skills. Use when the user asks to \"拆书\" /…",
+      "prerequisites": "无",
+      "source_path": "skills/cangjie-skill"
+    },
+    {
+      "id": "capability-evolver",
+      "name": "capability-evolver",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "GitHub API token for auto-issue reporting and releases.",
+      "prerequisites": "需要 GitHub Token 或 `gh auth login`；需要环境变量：`GITHUB_TOKEN`",
+      "source_path": "skills/capability-evolver"
+    },
+    {
+      "id": "clawbrowser",
+      "name": "clawbrowser",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Use when the agent needs to drive a browser through the Microsoft Playwright CLI (`pla…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/clawbrowser"
+    },
+    {
+      "id": "cli-anything-hub",
+      "name": "cli-anything-hub",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Discover agent-native CLIs for professional software. Access the live catalog to find …",
+      "prerequisites": "无",
+      "source_path": "skills/cli-anything-hub"
+    },
+    {
+      "id": "cloudbase",
+      "name": "cloudbase",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "CloudBase is a full-stack development and deployment toolkit for building and launching w…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/cloudbase"
+    },
+    {
+      "id": "cloudflare",
+      "name": "cloudflare",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2),…",
+      "prerequisites": "无",
+      "source_path": "skills/cloudflare"
+    },
+    {
+      "id": "cloudq",
+      "name": "cloudq",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "用户咨询腾讯云产品资源、AWS、阿里云等多云资源时，查看智能顾问架构图、架构目录、架构详情、架构评估结果、绘制架构图、开通智能顾问时、AI智能巡检、AI容量监测、AI混沌演练、A…",
+      "prerequisites": "需要飞书应用凭证或用户登录授权；需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；需要环境变量：`TENCENTCLOUD_SECRET_KEY`、`TENCENTCLOUD_TOKEN`",
+      "source_path": "skills/cloudq"
+    },
+    {
+      "id": "cn-ecommerce-search",
+      "name": "cn-ecommerce-search",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/cn-ecommerce-search"
+    },
+    {
+      "id": "colleague-skill",
+      "name": "colleague-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Distill a colleague into an AI Skill. Auto-collect Feishu/DingTalk/Slack data, generat…",
+      "prerequisites": "需要飞书应用凭证或用户登录授权；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/colleague-skill"
+    },
+    {
+      "id": "content-factory",
+      "name": "content-factory",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Multi-agent content production system. One piece of source content becomes many format…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/content-factory"
+    },
+    {
+      "id": "content-ops",
+      "name": "content-ops",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Score, evaluate, and iteratively improve any content or strategy using an auto-assembl…",
+      "prerequisites": "无",
+      "source_path": "skills/content-ops"
+    },
+    {
+      "id": "content-repurposer",
+      "name": "content-repurposer",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Transform long-form content into platform-optimized snippets. Your agent takes one blo…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/content-repurposer"
+    },
+    {
+      "id": "conversion-ops",
+      "name": "conversion-ops",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "conversion-ops",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/conversion-ops"
+    },
+    {
+      "id": "crash-expert-skill",
+      "name": "crash-expert-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Linux kernel vmcore/coredump analysis expert skill. Use when users need to analyze Lin…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/crash-expert-skill"
+    },
+    {
+      "id": "darwin-skill",
+      "name": "darwin-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Darwin Skill (达尔文.skill): autonomous skill optimizer inspired by Karpathy's autoresearch.…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/darwin-skill"
+    },
+    {
+      "id": "deck-generator",
+      "name": "deck-generator",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Generate professional presentations with AI-generated images. Use when asked to create…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`GEMINI_API_KEY`",
+      "source_path": "skills/deck-generator"
+    },
+    {
+      "id": "deep-research",
+      "name": "deep-research",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Structured deep research workflow with human-in-the-loop control. Use /research to gen…",
+      "prerequisites": "无",
+      "source_path": "skills/deep-research"
+    },
+    {
+      "id": "diagnose",
+      "name": "diagnose",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Disciplined diagnosis loop for hard bugs and performance regressions. Reproduce → mini…",
+      "prerequisites": "无",
+      "source_path": "skills/diagnose"
+    },
+    {
+      "id": "didi-ride-skill",
+      "name": "didi-ride-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "中国城市出行服务。当用户表达任何交通出行需求时必须使用此技能——包括打车/叫车/网约车、查价格、路线规划（公交/驾车/步行/骑行）、周边搜索、查询订单/司机位置/取消订单。关键词…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`DIDI_MCP_KEY`、`YOUR_KEY`",
+      "source_path": "skills/didi-ride-skill"
+    },
+    {
+      "id": "earnings-tracker",
+      "name": "earnings-tracker",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "AI 驱动的财报追踪器，自动扫描 A 股/美股财报日历，推送重要财报更新",
+      "prerequisites": "无",
+      "source_path": "skills/earnings-tracker"
+    },
+    {
+      "id": "edgeone",
+      "name": "edgeone",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Deploy a single HTML document to Tencent EdgeOne Pages via mcporter with no login or A…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/edgeone"
+    },
+    {
+      "id": "english-exam-writing-reviewer",
+      "name": "english-exam-writing-reviewer",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/english-exam-writing-reviewer"
+    },
+    {
+      "id": "excalidraw-diagram",
+      "name": "excalidraw-diagram",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Create Excalidraw diagrams for workflows, architectures, protocols, concepts, and syst…",
+      "prerequisites": "无",
+      "source_path": "skills/excalidraw-diagram"
+    },
+    {
+      "id": "fadada-document-sign",
+      "name": "fadada-document-sign",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "FaDaDa e-signature tool",
+      "prerequisites": "需要环境变量：`FADADA_APP_SECRET`",
+      "source_path": "skills/fadada-document-sign"
+    },
+    {
+      "id": "fbs-bookwriter",
+      "name": "fbs-bookwriter",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "福帮手出品 \\| 高质量长文档手稿工具链：书籍、手册、白皮书、行业指南、长篇报道、深度专题；支持联网查证（宿主允许时启用，离线自动降级）、S/P/C/B 分层审校、中文排版与 M…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/fbs-bookwriter"
+    },
+    {
+      "id": "finance-ops",
+      "name": "finance-ops",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "AI-powered financial analysis suite. Generates executive CFO briefings from QuickBooks…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/finance-ops"
+    },
+    {
+      "id": "flyai",
+      "name": "flyai",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Search flights, hotels, attractions, concerts, and travel deals with natural language.…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；可能需要启用对应 MCP / 连接器；需要环境变量：`FLYAI_API_KEY`",
+      "source_path": "skills/flyai"
+    },
+    {
+      "id": "frontend-dev",
+      "name": "frontend-dev",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "\\|",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`MINIMAX_API_KEY`",
+      "source_path": "skills/frontend-dev"
+    },
+    {
+      "id": "gif-sticker-maker",
+      "name": "gif-sticker-maker",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "\\|",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`MINIMAX_API_KEY`",
+      "source_path": "skills/gif-sticker-maker"
+    },
+    {
+      "id": "github-ai-trends",
+      "name": "github-ai-trends",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Generate GitHub AI trending project reports as formatted text leaderboards. Fetches to…",
+      "prerequisites": "需要 GitHub Token 或 `gh auth login`；需要环境变量：`GITHUB_TOKEN`",
+      "source_path": "skills/github-ai-trends"
+    },
+    {
+      "id": "github-trending-cn",
+      "name": "github-trending-cn",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "GitHub Trending Monitor. Fetch GitHub trending repos by daily/weekly/monthly period using…",
+      "prerequisites": "需要 GitHub Token 或 `gh auth login`；需要环境变量：`GITHUB_TOKEN`",
+      "source_path": "skills/github-trending-cn"
+    },
+    {
+      "id": "globepilot-ai-agent-2",
+      "name": "globepilot-ai-agent-2",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "AI-powered global travel assistant providing visa info, currency conversion, airport s…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/globepilot-ai-agent-2"
+    },
+    {
+      "id": "growth-engine",
+      "name": "growth-engine",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "growth-engine",
+      "prerequisites": "需要环境变量：`EMAIL_AUTH_TOKEN`、`PIPELINE_AUTH_TOKEN`、`RECRUITING_AUTH_TOKEN`",
+      "source_path": "skills/growth-engine"
+    },
+    {
+      "id": "handoff",
+      "name": "handoff",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.…",
+      "prerequisites": "无",
+      "source_path": "skills/handoff"
+    },
+    {
+      "id": "himalaya",
+      "name": "himalaya",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forwar…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/himalaya"
+    },
+    {
+      "id": "html-deploy",
+      "name": "html-deploy",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Publish a single self-contained HTML page to htmlcode.fun and return live URLs. Use wh…",
+      "prerequisites": "无",
+      "source_path": "skills/html-deploy"
+    },
+    {
+      "id": "humanizer",
+      "name": "humanizer",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing text to …",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/humanizer"
+    },
+    {
+      "id": "impeccable",
+      "name": "impeccable",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "\\|",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/impeccable"
+    },
+    {
+      "id": "infographic-maker",
+      "name": "infographic-maker",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Generate hand-drawn cartoon-style infographics from articles, concepts, reports, or da…",
+      "prerequisites": "无",
+      "source_path": "skills/infographic-maker"
+    },
+    {
+      "id": "jinshuju",
+      "name": "jinshuju",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Use when the user wants to create or edit forms, collect or query entries, bulk-update…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`YOUR_API_KEY`、`YOUR_API_SECRET`",
+      "source_path": "skills/jinshuju"
+    },
+    {
+      "id": "kdocs",
+      "name": "kdocs",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "金山文档（WPS 云文档 / 365.kdocs.cn / www.kdocs.cn）— 在线云文档平台，【金山文档官方 Skill】。 当用户提到金山文档、Kdocs、云文档、…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`KINGSOFT_DOCS_TOKEN`",
+      "source_path": "skills/kdocs"
+    },
+    {
+      "id": "khazix-writer",
+      "name": "khazix-writer",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "\\|",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/khazix-writer"
+    },
+    {
+      "id": "lark-unified",
+      "name": "lark-unified",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Unified Lark/Feishu CLI suite covering messaging, documents, collaboration, scheduling…",
+      "prerequisites": "需要飞书应用凭证或用户登录授权；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/lark-unified"
+    },
+    {
+      "id": "lexiang-knowledge-base",
+      "name": "lexiang-knowledge-base",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "用于访问乐享知识库平台的专用 skill。当用户明确提到「乐享」「lexiang」「知识库」「知识」「文档」等关键词，或用户提供的链接 host 为 lexiangla.com，…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`LEXIANG_TOKEN`",
+      "source_path": "skills/lexiang-knowledge-base"
+    },
+    {
+      "id": "libtv-skill",
+      "name": "libtv-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "agent-im 会话技能 - 通过 liblib.tv 的 AI 能力生成和编辑图片/视频。覆盖场景包括：生成（文生图、文生视频、图生视频、做动画、画一个xxx、来段xxx）、…",
+      "prerequisites": "需要环境变量：`LIBTV_ACCESS_KEY`",
+      "source_path": "skills/libtv-skill"
+    },
+    {
+      "id": "lingxi-financialsearch-skill",
+      "name": "lingxi-financialsearch-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "国泰海通金融数据查询Skill，通过自然语言查询A股实时行情、公司基本信息、F10财务数据、个股技术指标等金融数据。遵循沪深交易所行情转发规则，仅提供授权范围内基础行情数据。触发…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/lingxi-financialsearch-skill"
+    },
+    {
+      "id": "llm-wiki",
+      "name": "llm-wiki",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Build and maintain a personal knowledge base (wiki) using LLMs. Instead of RAG-style r…",
+      "prerequisites": "无",
+      "source_path": "skills/llm-wiki"
+    },
+    {
+      "id": "macro-monitor",
+      "name": "macro-monitor",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "每日宏观数据监控和推送。自动浏览免费数据源（Trading Economics、FRED、国家统计局、央行官网、财联社等），整理整合过去24小时发布的宏观数据和政策信息，并推送给…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/macro-monitor"
+    },
+    {
+      "id": "market-researcher",
+      "name": "market-researcher",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Market research specialist focused on comprehensive market analysis, consumer behavior…",
+      "prerequisites": "无",
+      "source_path": "skills/market-researcher"
+    },
+    {
+      "id": "mcdonald-assistant",
+      "name": "mcdonald-assistant",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "麦当劳中国点餐与优惠助手。用户提到麦当劳、麦麦、麦当劳外卖、点餐、查菜单、领麦当劳优惠券、查麦当劳积分/订单/活动时使用。依赖 WorkBuddy 已配置并信任的麦当劳 MCP …",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`MCP_TOKEN`",
+      "source_path": "skills/mcdonald-assistant"
+    },
+    {
+      "id": "mcp-builder",
+      "name": "mcp-builder",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs …",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/mcp-builder"
+    },
+    {
+      "id": "mcporter",
+      "name": "mcporter",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HT…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/mcporter"
+    },
+    {
+      "id": "meituan-coupon-workbuddy",
+      "name": "meituan-coupon-workbuddy",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "【美团官方】美团生活助手，支持外卖、餐饮团购、酒店住宿、门票度假、休闲娱乐、闪购、医药等多品类优惠券/红包/神券的一键领取与历史领取记录查询。核心能力：1）一键领券，覆盖上述多品…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；需要环境变量：`AUTH_SCRIPT`、`USER_TOKEN`",
+      "source_path": "skills/meituan-coupon-workbuddy"
+    },
+    {
+      "id": "meituan-huisheng-coupon",
+      "name": "meituan-huisheng-coupon",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；需要环境变量：`AUTH_SCRIPT`、`USER_TOKEN`",
+      "source_path": "skills/meituan-huisheng-coupon"
+    },
+    {
+      "id": "migraq",
+      "name": "migraq",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯云迁移平台（CMG/MSP）全流程能力。触发词：资源扫描、扫描阿里云/AWS/华为云/GCP资源、生成云资源清单、选型推荐、对标腾讯云、推荐规格、帮我推荐、给我推荐、ECS对…",
+      "prerequisites": "需要环境变量：`TENCENTCLOUD_SECRET_KEY`",
+      "source_path": "skills/migraq"
+    },
+    {
+      "id": "minimax-xlsx",
+      "name": "minimax-xlsx",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Open, create, read, analyze, edit, or validate Excel/spreadsheet files (.xlsx, .xlsm, …",
+      "prerequisites": "无",
+      "source_path": "skills/minimax-xlsx"
+    },
+    {
+      "id": "multi-search-engine",
+      "name": "multi-search-engine",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Multi search engine integration with 16 engines (7 CN + 9 Global). Supports advanced s…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/multi-search-engine"
+    },
+    {
+      "id": "my-novel-writer",
+      "name": "my-novel-writer",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">-",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`NOVEL_API_KEY`",
+      "source_path": "skills/my-novel-writer"
+    },
+    {
+      "id": "nano-banana-pro",
+      "name": "nano-banana-pro",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/m…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`GEMINI_API_KEY`",
+      "source_path": "skills/nano-banana-pro"
+    },
+    {
+      "id": "neodata-financial-search",
+      "name": "neodata-financial-search",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">-",
+      "prerequisites": "无",
+      "source_path": "skills/neodata-financial-search"
+    },
+    {
+      "id": "news-summary",
+      "name": "news-summary",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "This skill should be used when the user asks for news updates, daily briefings, or wha…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`OPENAI_API_KEY`",
+      "source_path": "skills/news-summary"
+    },
+    {
+      "id": "note-organizer",
+      "name": "note-organizer",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Joplin — Note Manager — personal knowledge base. Personal productivity tool. Use when …",
+      "prerequisites": "无",
+      "source_path": "skills/note-organizer"
+    },
+    {
+      "id": "novel-writer",
+      "name": "novel-writer",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "章节正文生成器 - 根据章节大纲、Voice Profile 和角色档案构建 LLM 提示词，用于生成章节正文。当需要根据大纲创作具体章节时使用。",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/novel-writer"
+    },
+    {
+      "id": "nuwa-skill",
+      "name": "nuwa-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "女娲造人：输入人名/主题/甚至只是模糊需求，自动深度调研→思维框架提炼→生成可运行的人物Skill。",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/nuwa-skill"
+    },
+    {
+      "id": "obsidian",
+      "name": "obsidian",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+      "prerequisites": "无",
+      "source_path": "skills/obsidian"
+    },
+    {
+      "id": "open-lesson",
+      "name": "open-lesson",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Interact with openLesson tutoring API for Socratic learning: generate learning plans a…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`OPENLESSON_API_KEY`、`YOUR_API_KEY`",
+      "source_path": "skills/open-lesson"
+    },
+    {
+      "id": "openai-image-gen",
+      "name": "openai-image-gen",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gall…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`OPENAI_API_KEY`",
+      "source_path": "skills/openai-image-gen"
+    },
+    {
+      "id": "openai-whisper",
+      "name": "openai-whisper",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Local speech-to-text with the Whisper CLI (no API key).",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/openai-whisper"
+    },
+    {
+      "id": "openai-whisper-api",
+      "name": "openai-whisper-api",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`OPENAI_API_KEY`",
+      "source_path": "skills/openai-whisper-api"
+    },
+    {
+      "id": "openclaw-assets-to-workbuddy",
+      "name": "openclaw-assets-to-workbuddy",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "将 OpenClaw 用户的个人资产迁移到 WorkBuddy 对应位置，重点覆盖 SOUL.md、IDENTITY.md、USER.md、memory、skills、MCP 配…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要飞书应用凭证或用户登录授权；需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/openclaw-assets-to-workbuddy"
+    },
+    {
+      "id": "oracle",
+      "name": "oracle",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Use the @steipete/oracle CLI to bundle a prompt plus the right files and get a second-…",
+      "prerequisites": "无",
+      "source_path": "skills/oracle"
+    },
+    {
+      "id": "outbound-engine",
+      "name": "outbound-engine",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Design, analyze, and optimize cold outbound email campaigns for Instantly. Handles end…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/outbound-engine"
+    },
+    {
+      "id": "paper-quick-reader",
+      "name": "paper-quick-reader",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/paper-quick-reader"
+    },
+    {
+      "id": "perplexity",
+      "name": "perplexity",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Search the web with AI-powered answers via Perplexity API. Returns grounded responses …",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`PERPLEXITY_API_KEY`",
+      "source_path": "skills/perplexity"
+    },
+    {
+      "id": "plan-tracker",
+      "name": "plan-tracker",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "当用户需要目标拆解、每日打卡、连续签到、学习热力图、进度预警时使用。支持 SMART 澄清 + OKR 月周拆解 + ABC 三档每日任务（A 完美 / B 基础 / C ≤15…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/plan-tracker"
+    },
+    {
+      "id": "playwright-browser-automation",
+      "name": "playwright-browser-automation",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Direct Playwright API for browser automation without MCP complexity. Navigate websites…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/playwright-browser-automation"
+    },
+    {
+      "id": "playwright-scraper-skill",
+      "name": "playwright-scraper-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Playwright-based web scraping OpenClaw Skill with anti-bot protection. Successfully te…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/playwright-scraper-skill"
+    },
+    {
+      "id": "podcast-ops",
+      "name": "podcast-ops",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">-",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`ANTHROPIC_API_KEY`、`OPENAI_API_KEY`、`OPENAI_LLM_KEY`",
+      "source_path": "skills/podcast-ops"
+    },
+    {
+      "id": "porteden-email",
+      "name": "porteden-email",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Email Management - Secure Gmail, Outlook & Exchange - multi account support. Read, sea…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`PE_API_KEY`",
+      "source_path": "skills/porteden-email"
+    },
+    {
+      "id": "price-history",
+      "name": "price-history",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "封装慢慢买（manmanbuy.com）官方 MCP，按关键词搜索全网商品的参考好价、实时价格与隐藏优惠券，并基于返回数据判断当前价是否为真实低价、识别\"先涨后降\"的虚假促销。当…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/price-history"
+    },
+    {
+      "id": "product-showcase-site",
+      "name": "product-showcase-site",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Generate a comprehensive deployable product showcase website for an existing web app. …",
+      "prerequisites": "可能需要启用对应 MCP / 连接器；需要环境变量：`YOUR_SITE_KEY`",
+      "source_path": "skills/product-showcase-site"
+    },
+    {
+      "id": "promo-creator-skills",
+      "name": "promo-creator-skills",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "产品宣传片制作总控 skill pack。用于从产品说明、官网、应用截图或 GitHub 仓库制作 60-90 秒宣传视频，按阶段完成 brief、storyboard、素材、H…",
+      "prerequisites": "无",
+      "source_path": "skills/promo-creator-skills"
+    },
+    {
+      "id": "prompt-engineering-expert",
+      "name": "prompt-engineering-expert",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Advanced expert in prompt engineering, custom instructions design, and prompt optimiza…",
+      "prerequisites": "无",
+      "source_path": "skills/prompt-engineering-expert"
+    },
+    {
+      "id": "qmd",
+      "name": "qmd",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Local hybrid search for markdown notes and docs. Use when searching notes, finding rel…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/qmd"
+    },
+    {
+      "id": "qqmusic",
+      "name": "qqmusic",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "QQ Music — search songs, albums, playlists, music videos, artists; daily recommendations;…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`QQMUSIC_API_KEY`",
+      "source_path": "skills/qqmusic"
+    },
+    {
+      "id": "remotion-video-toolkit",
+      "name": "remotion-video-toolkit",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Complete toolkit for programmatic video creation with Remotion + React. Covers animati…",
+      "prerequisites": "无",
+      "source_path": "skills/remotion-video-toolkit"
+    },
+    {
+      "id": "responsiveness-check",
+      "name": "responsiveness-check",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Test website responsiveness across viewport widths using browser automation. Resizes a…",
+      "prerequisites": "需要 GitHub Token 或 `gh auth login`；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/responsiveness-check"
+    },
+    {
+      "id": "resume-assistant",
+      "name": "resume-assistant",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": ">",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/resume-assistant"
+    },
+    {
+      "id": "revenue-intelligence",
+      "name": "revenue-intelligence",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "revenue-intelligence",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`AHREFS_TOKEN`、`GONG_API_KEY`、`HUBSPOT_API_KEY`",
+      "source_path": "skills/revenue-intelligence"
+    },
+    {
+      "id": "sag",
+      "name": "sag",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "ElevenLabs text-to-speech with mac-style say UX.",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`ELEVENLABS_API_KEY`、`SAG_API_KEY`",
+      "source_path": "skills/sag"
+    },
+    {
+      "id": "sales-pipeline",
+      "name": "sales-pipeline",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "sales-pipeline",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`BRAVE_API_KEY`、`HUBSPOT_API_KEY`、`INSTANTLY_API_KEY`",
+      "source_path": "skills/sales-pipeline"
+    },
+    {
+      "id": "sales-playbook",
+      "name": "sales-playbook",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "sales-playbook",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`AHREFS_API_KEY`、`ANTHROPIC_API_KEY`、`OPENAI_API_KEY`、`SEMRUSH_API_KEY`",
+      "source_path": "skills/sales-playbook"
+    },
+    {
+      "id": "seo-ops",
+      "name": "seo-ops",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "seo-ops",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`AHREFS_TOKEN`、`BRAVE_API_KEY`、`GOOGLE_CLIENT_SECRET`",
+      "source_path": "skills/seo-ops"
+    },
+    {
+      "id": "shippage",
+      "name": "shippage",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Publish HTML or Markdown to a public URL instantly with ShipPage. Use when a user want…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要微信/企微相关凭证或扫码登录；可能需要启用对应 MCP / 连接器；需要环境变量：`API_KEY`",
+      "source_path": "skills/shippage"
+    },
+    {
+      "id": "shopify-admin-api",
+      "name": "shopify-admin-api",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Full read/write access to Shopify Admin REST API for managing orders, products, custom…",
+      "prerequisites": "需要环境变量：`SHOPIFY_ACCESS_TOKEN`",
+      "source_path": "skills/shopify-admin-api"
+    },
+    {
+      "id": "sino-drug-instructions-search",
+      "name": "sino-drug-instructions-search",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "在用户询问药品说明书、用药信息、适应症、禁忌、用法用量、不良反应、成分、规格、厂家，或根据症状/疾病查找药品时使用此技能。⚠️ 调用前须已通过 use_skill 加载本技能（s…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器；需要环境变量：`SKILLS_BIZ_TOKEN`",
+      "source_path": "skills/sino-drug-instructions-search"
+    },
+    {
+      "id": "skill-creator",
+      "name": "skill-creator",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Guide for creating effective skills. This skill should be used when users want to crea…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/skill-creator"
+    },
+    {
+      "id": "skill-scanner",
+      "name": "skill-scanner",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Scan any agent skill for security risks before you install or use it. Powered by Tencent …",
+      "prerequisites": "无",
+      "source_path": "skills/skill-scanner"
+    },
+    {
+      "id": "skill-vetter",
+      "name": "skill-vetter",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Security-first skill vetting for AI agents. Use before installing any skill from commu…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/skill-vetter"
+    },
+    {
+      "id": "skills-security-check",
+      "name": "skills-security-check",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯云鼎实验室出品，Skill安全审查工具。对用户指定的skill.md文件及其配套的文档、程序、脚本等进行全面安全审计，确保引用安全",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`OPENAI_API_KEY`",
+      "source_path": "skills/skills-security-check"
+    },
+    {
+      "id": "smart-page",
+      "name": "smart-page",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯文档智能页面（Smart Page）是可交互在线汇报网页生成工具，适用于汇报、述职、周报、复盘、数据看板、课件、培训、调研报告、会议纪要和本地 HTML 上云。区别于 PPT…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/smart-page"
+    },
+    {
+      "id": "smooth-browser",
+      "name": "smooth-browser",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "PREFERRED BROWSER - Browser for AI agents to carry out any task on the web. Use when y…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/smooth-browser"
+    },
+    {
+      "id": "stagehand-browser-cli",
+      "name": "stagehand-browser-cli",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Automate web browser interactions using natural language via CLI commands. Use when th…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`BROWSERBASE_API_KEY`",
+      "source_path": "skills/stagehand-browser-cli"
+    },
+    {
+      "id": "static-app",
+      "name": "static-app",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Deploy static websites and built frontend apps to Static.app hosting. Use when a user …",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`STATIC_APP_API_KEY`",
+      "source_path": "skills/static-app"
+    },
+    {
+      "id": "summarize",
+      "name": "summarize",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`ANTHROPIC_API_KEY`、`APIFY_API_TOKEN`、`FIRECRAWL_API_KEY`、`GEMINI_API_KEY`、`GOOGLE_API_KEY`、`GOOGLE_GENERATIVE_AI_API_KEY`",
+      "source_path": "skills/summarize"
+    },
+    {
+      "id": "task-alignment",
+      "name": "task-alignment",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Alignment conversation starting from a user's rough idea. Co-decides with the user whe…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/task-alignment"
+    },
+    {
+      "id": "task-implement",
+      "name": "task-implement",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Autonomous task execution driven by documents under `.task/<MMDD_slug>/` (produced by …",
+      "prerequisites": "无",
+      "source_path": "skills/task-implement"
+    },
+    {
+      "id": "tavily",
+      "name": "tavily",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "AI-optimized web search using Tavily Search API. Use when you need comprehensive web r…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`TAVILY_API_KEY`",
+      "source_path": "skills/tavily"
+    },
+    {
+      "id": "team-ops",
+      "name": "team-ops",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Audit team performance using the Elon Algorithm (identify A/B/C players) and extract a…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`ANTHROPIC_API_KEY`、`HUBSPOT_API_KEY`、`OPENAI_API_KEY`",
+      "source_path": "skills/team-ops"
+    },
+    {
+      "id": "tencent-campus-recruit",
+      "name": "tencent-campus-recruit",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "当用户询问腾讯校园招聘相关问题时使用，包括：校招/实习投递流程与时间节点、岗位搜索与推荐、 招聘公告与宣讲会动态、简历诊断与优化、面试准备与模拟陪练、校招防诈骗识别。 通过 jo…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/tencent-campus-recruit"
+    },
+    {
+      "id": "tencent-docs",
+      "name": "tencent-docs",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯文档（docs.qq.com）-在线云文档平台，是创建、编辑、管理文档的首选 skill。涉及\"新建/创建/编辑/读取/查看/搜索文档\"、\"保存文件\"、\"云文档\"、\"腾讯文档…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器；需要环境变量：`TENCENT_DOCS_TOKEN`",
+      "source_path": "skills/tencent-docs"
+    },
+    {
+      "id": "tencent-meeting-skill",
+      "name": "tencent-meeting-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "在用户提及腾讯会议、视频会议、线上会议相关内容与操作时使用此技能。触发关键词包括：预约会议、创建会议、修改会议、取消会议、查询会议、会议详情、会议号、meeting_id、mee…",
+      "prerequisites": "需要飞书应用凭证或用户登录授权；需要微信/企微相关凭证或扫码登录；可能需要启用对应 MCP / 连接器；需要环境变量：`TENCENT_MEETING_TOKEN`",
+      "source_path": "skills/tencent-meeting-skill"
+    },
+    {
+      "id": "tencent-music-campus-recruit",
+      "name": "tencent-music-campus-recruit",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "当用户询问腾讯校园招聘相关问题时使用，包括：校招/实习投递流程与时间节点、岗位搜索与推荐、 招聘公告与宣讲会动态、组织架构/BG/部门介绍、简历诊断与优化、面试准备与模拟陪练、校…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/tencent-music-campus-recruit"
+    },
+    {
+      "id": "tencent-survey",
+      "name": "tencent-survey",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯问卷（wj.qq.com）- 在线问卷调查平台。涉及「问卷」「调查」「表单」「投票」「考试」「测评」「wj.qq.com」等操作时优先使用。支持能力：(1) 获取问卷详情（标…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`TENCENT_SURVEY_TOKEN`",
+      "source_path": "skills/tencent-survey"
+    },
+    {
+      "id": "tencent-yunzhi",
+      "name": "tencent-yunzhi",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯乐享（lexiangla.com / csig.lexiangla.com）知识库专用操作。仅在用户消息包含 lexiangla.com 链接、或明确提及『乐享/云知/Lex…",
+      "prerequisites": "需要飞书应用凭证或用户登录授权；需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`LEXIANG_TOKEN`",
+      "source_path": "skills/tencent-yunzhi"
+    },
+    {
+      "id": "tencentcloud-ocr",
+      "name": "tencentcloud-ocr",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯云通用文字识别（高精度版）(GeneralAccurateOCR) 技能包。当用户发送/粘贴图片、提供图片URL、或要求识别图片中的文字时，应自动调用此技能。支持图像整体文字…",
+      "prerequisites": "需要环境变量：`TENCENTCLOUD_SECRET_KEY`",
+      "source_path": "skills/tencentcloud-ocr"
+    },
+    {
+      "id": "tencentcloud-ocr-extractdocagent",
+      "name": "tencentcloud-ocr-extractdocagent",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯云实时文档抽取Agent(ExtractDocAgent)接口调用技能。当用户需要从图片或PDF中按自定义字段名称进行结构化信息抽取时，应使用此技能。支持自定义字段名称、字段…",
+      "prerequisites": "需要环境变量：`TENCENTCLOUD_SECRET_KEY`",
+      "source_path": "skills/tencentcloud-ocr-extractdocagent"
+    },
+    {
+      "id": "tencentcloud-ocr-general",
+      "name": "tencentcloud-ocr-general",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯云广告文字识别(AdvertiseOCR)接口调用技能。当用户需要从图片中识别文字内容时,应使用此技能。支持中英文、横排、竖排及倾斜场景的图片文字识别,支持90度、180度、…",
+      "prerequisites": "需要环境变量：`TENCENTCLOUD_SECRET_KEY`",
+      "source_path": "skills/tencentcloud-ocr-general"
+    },
+    {
+      "id": "tencentcloud-ocr-questionmarkagent",
+      "name": "tencentcloud-ocr-questionmarkagent",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯云试题批改Agent(SubmitQuestionMarkAgentJob/DescribeQuestionMarkAgentJob)接口调用技能。当用户需要对试卷图片或试题…",
+      "prerequisites": "需要环境变量：`TENCENTCLOUD_SECRET_KEY`",
+      "source_path": "skills/tencentcloud-ocr-questionmarkagent"
+    },
+    {
+      "id": "tencentcloud-ocr-recognizetableaccurate",
+      "name": "tencentcloud-ocr-recognizetableaccurate",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "腾讯云表格识别v3(RecognizeTableAccurateOCR)接口调用技能。当用户需要从表格图片或PDF中识别常规表格、无线表格、多表格的内容,提取每个单元格的文字信息…",
+      "prerequisites": "需要环境变量：`TENCENTCLOUD_SECRET_KEY`",
+      "source_path": "skills/tencentcloud-ocr-recognizetableaccurate"
+    },
+    {
+      "id": "tmux",
+      "name": "tmux",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping p…",
+      "prerequisites": "无",
+      "source_path": "skills/tmux"
+    },
+    {
+      "id": "travel-planning",
+      "name": "travel-planning",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Plan trips with itineraries, multi-city routing, budget optimization, family logistics…",
+      "prerequisites": "无",
+      "source_path": "skills/travel-planning"
+    },
+    {
+      "id": "university-applications",
+      "name": "university-applications",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "全体系命理大师 — 八字四柱、紫微斗数、奇门遁甲、六爻、梅花易数、塔罗、星盘、",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/university-applications"
+    },
+    {
+      "id": "web-access",
+      "name": "web-access",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "所有联网操作必须通过此 skill 处理，包括：搜索、网页抓取、登录后操作、网络交互等。",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/web-access"
+    },
+    {
+      "id": "web-performance-audit",
+      "name": "web-performance-audit",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Analyze deployed websites and web apps for performance quality. Measures Core Web Vita…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/web-performance-audit"
+    },
+    {
+      "id": "web-scraper",
+      "name": "web-scraper",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Web scraping and content comprehension agent — multi-strategy extraction with cascade …",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`OPENROUTER_API_KEY`",
+      "source_path": "skills/web-scraper"
+    },
+    {
+      "id": "web-search-exa",
+      "name": "web-search-exa",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Neural web search, content extraction, company and people research, code search, and d…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；可能需要启用对应 MCP / 连接器；需要环境变量：`YOUR_EXA_KEY`、`YOUR_KEY`",
+      "source_path": "skills/web-search-exa"
+    },
+    {
+      "id": "wechat-viral-topic",
+      "name": "wechat-viral-topic",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "公众号编辑、短视频博主、漫画作者、H5 策划必备的热点爆款策划助手。当用户需要选题灵感、起爆款标题、把热点做成文章/短视频/漫画/H5 等全形态创作方案，或评估某个素材能不能爆时…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/wechat-viral-topic"
+    },
+    {
+      "id": "wecom-weisheng-scrm",
+      "name": "wecom-weisheng-scrm",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "当用户需要查询或管理微盛企微管家（企业微信） SCRM 中的客户信息、客户标签、客户群、营销素材、活码、群发、跟进记录、聊天记录、联系人、商机、汇报、抽奖、客户日程等相关业务能力…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/wecom-weisheng-scrm"
+    },
+    {
+      "id": "weiyun",
+      "name": "weiyun",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "微云网盘 MCP 接口完整技能。包含 weiyun.list、weiyun.list_by_category、weiyun.download、weiyun.delete、weiy…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`WEIYUN_MCP_TOKEN`",
+      "source_path": "skills/weiyun"
+    },
+    {
+      "id": "weread-skills",
+      "name": "weread-skills",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "微信读书助手 — 搜索书籍、管理书架、查看笔记划线、浏览书评、阅读统计、发现推荐好书",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要微信/企微相关凭证或扫码登录；需要环境变量：`WEREAD_API_KEY`",
+      "source_path": "skills/weread-skills"
+    },
+    {
+      "id": "workbuddy-asset-migration",
+      "name": "workbuddy-asset-migration",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "在 WorkBuddy 国内版（~/.workbuddy/）和海外版（~/.workbuddy-ai/）之间，或跨机器之间，迁移用户个人资产（skills、memory、conv…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/workbuddy-asset-migration"
+    },
+    {
+      "id": "workrally",
+      "name": "workrally",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "WorkRally CLI (workrally) — 面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集。 支持 AI 生图、AI 生视频、项目管理、资产库、媒资管…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器；需要环境变量：`WORKRALLY_API_KEY`、`YOUR_API_KEY`",
+      "source_path": "skills/workrally"
+    },
+    {
+      "id": "x-longform-post",
+      "name": "x-longform-post",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Write long-form X (Twitter) posts and threads in a founder/CEO voice. Use when draftin…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/x-longform-post"
+    },
+    {
+      "id": "xiaobai-coach",
+      "name": "xiaobai-coach",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "给小白讲清理财、基金、股票知识，并配套实操工具与清单的财商陪跑技能。当用户问个人理财、攒钱、基金/ETF/股票/债券入门、定投、资产配置、复利计算、估值、止盈止损、识别投资骗局等…",
+      "prerequisites": "无",
+      "source_path": "skills/xiaobai-coach"
+    },
+    {
+      "id": "yingmi-skill",
+      "name": "yingmi-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "当用户需要查询基金、策略、公告、财经资讯，做资产配置、组合诊断、风险回测、现金流分析，或生成图表、PDF 时，优先使用本 Skill 获取真实数据与可执行能力。",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/yingmi-skill"
+    },
+    {
+      "id": "yourself-skill",
+      "name": "yourself-skill",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Distill yourself into an AI Skill. Deconstruct chat history, diaries, social media, an…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/yourself-skill"
+    },
+    {
+      "id": "zoom-out",
+      "name": "zoom-out",
+      "category": "ai-agent",
+      "category_label": "AI / Agent 工具",
+      "description": "Tell the agent to zoom out and give broader context or a higher-level perspective on u…",
+      "prerequisites": "无",
+      "source_path": "skills/zoom-out"
+    },
+    {
+      "id": "cnb-skill",
+      "name": "cnb-skill",
+      "category": "cloud-deploy",
+      "category_label": "云 / 存储 / 部署",
+      "description": "Interact with CNB (Cloud Native Build) platform via OpenAPI. Manage organizations, reposi…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/cnb-skill"
+    },
+    {
+      "id": "netlify-deploy",
+      "name": "netlify-deploy",
+      "category": "cloud-deploy",
+      "category_label": "云 / 存储 / 部署",
+      "description": "Deploy and manage Netlify sites with npx netlify. Use for first deploys, preview deplo…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/netlify-deploy"
+    },
+    {
+      "id": "novel-writing",
+      "name": "novel-writing",
+      "category": "cloud-deploy",
+      "category_label": "云 / 存储 / 部署",
+      "description": "AI长篇网文创作技能包。用于解决长篇网络小说创作中的核心痛点：上下文丢失、文风不一致、设定冲突、节奏失控、多线混乱、质量不稳、读者反馈无法内化。触发场景包括：开始新书、规划大纲、…",
+      "prerequisites": "无",
+      "source_path": "skills/novel-writing"
+    },
+    {
+      "id": "vercel-deploy",
+      "name": "vercel-deploy",
+      "category": "cloud-deploy",
+      "category_label": "云 / 存储 / 部署",
+      "description": "Deploy and manage Vercel projects from the terminal. Use for Vercel deployments, previ…",
+      "prerequisites": "需要环境变量：`VERCEL_TOKEN`",
+      "source_path": "skills/vercel-deploy"
+    },
+    {
+      "id": "ecommerce-copywriter",
+      "name": "ecommerce-copywriter",
+      "category": "content-marketing",
+      "category_label": "内容 / 营销 / 媒体",
+      "description": "电商爆款文案生成技能。为淘宝/拼多多/抖音/京东卖家生成高转化率的商品标题、详情页文案、卖点提炼和促销文案。使用场景：(1) 商品标题优化，(2) 详情页文案生成，(3) 卖点提…",
+      "prerequisites": "无",
+      "source_path": "skills/ecommerce-copywriter"
+    },
+    {
+      "id": "github-pages-auto-deploy",
+      "name": "github-pages-auto-deploy",
+      "category": "content-marketing",
+      "category_label": "内容 / 营销 / 媒体",
+      "description": "Configure automatic website deployment to GitHub Pages with GitHub Actions and custom …",
+      "prerequisites": "无",
+      "source_path": "skills/github-pages-auto-deploy"
+    },
+    {
+      "id": "setup-pre-commit",
+      "name": "setup-pre-commit",
+      "category": "content-marketing",
+      "category_label": "内容 / 营销 / 媒体",
+      "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in…",
+      "prerequisites": "无",
+      "source_path": "skills/setup-pre-commit"
+    },
+    {
+      "id": "video-frames",
+      "name": "video-frames",
+      "category": "content-marketing",
+      "category_label": "内容 / 营销 / 媒体",
+      "description": "Extract frames or short clips from videos using ffmpeg.",
+      "prerequisites": "无",
+      "source_path": "skills/video-frames"
+    },
+    {
+      "id": "web-deploy-github",
+      "name": "web-deploy-github",
+      "category": "content-marketing",
+      "category_label": "内容 / 营销 / 媒体",
+      "description": "Create and deploy single-page static websites to GitHub Pages with an autonomous workf…",
+      "prerequisites": "需要 GitHub Token 或 `gh auth login`",
+      "source_path": "skills/web-deploy-github"
+    },
+    {
+      "id": "github",
+      "name": "github",
+      "category": "development",
+      "category_label": "开发 / 工程",
+      "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh ap…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/github"
+    },
+    {
+      "id": "trello",
+      "name": "trello",
+      "category": "development",
+      "category_label": "开发 / 工程",
+      "description": "Manage Trello boards, lists, and cards via the Trello REST API.",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`TRELLO_API_KEY`、`TRELLO_TOKEN`",
+      "source_path": "skills/trello"
+    },
+    {
+      "id": "airbnb",
+      "name": "airbnb",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Search Airbnb listings with prices, ratings, and direct links. No API key required. Us…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/airbnb"
+    },
+    {
+      "id": "aviationstack-flight-tracker",
+      "name": "aviationstack-flight-tracker",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Track flights in real-time with detailed status, gate info, delays, and live position.…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`AVIATIONSTACK_API_KEY`",
+      "source_path": "skills/aviationstack-flight-tracker"
+    },
+    {
+      "id": "browserwing",
+      "name": "browserwing",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Control browser automation through HTTP API. Supports page navigation, element interac…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/browserwing"
+    },
+    {
+      "id": "citation-manager",
+      "name": "citation-manager",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Add real references and standardize citations for research papers and theses. Supports…",
+      "prerequisites": "无",
+      "source_path": "skills/citation-manager"
+    },
+    {
+      "id": "cloudflare-worker-builder",
+      "name": "cloudflare-worker-builder",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Scaffold and deploy Cloudflare Workers with Hono routing, Vite plugin, and Static Asse…",
+      "prerequisites": "无",
+      "source_path": "skills/cloudflare-worker-builder"
+    },
+    {
+      "id": "ecomseer",
+      "name": "ecomseer",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "TikTok Shop e-commerce data assistant. Search products, find trending items, analyze infl…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`ECOMSEER_API_KEY`",
+      "source_path": "skills/ecomseer"
+    },
+    {
+      "id": "flight-tracker",
+      "name": "flight-tracker",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Flight tracking and scheduling. Track live flights in real-time by region, callsign, o…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`AVIATIONSTACK_API_KEY`",
+      "source_path": "skills/flight-tracker"
+    },
+    {
+      "id": "football-bayes",
+      "name": "football-bayes",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "20年经验的足球竞彩策略官：贝叶斯统计 + 现代战术周期化，输出胜平负概率与风险提示",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/football-bayes"
+    },
+    {
+      "id": "gsap-animation-assistant",
+      "name": "gsap-animation-assistant",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "GSAP assistant for generating and reviewing frontend animation code with timelines, Sc…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/gsap-animation-assistant"
+    },
+    {
+      "id": "healthcheck",
+      "name": "healthcheck",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Track water and sleep with JSON file storage.",
+      "prerequisites": "无",
+      "source_path": "skills/healthcheck"
+    },
+    {
+      "id": "novel",
+      "name": "novel",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Manage novel data — chapters, characters, plots — from the terminal fast. Use when out…",
+      "prerequisites": "无",
+      "source_path": "skills/novel"
+    },
+    {
+      "id": "stealth-browser",
+      "name": "stealth-browser",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "Ultimate stealth browser automation with anti-detection, Cloudflare bypass, CAPTCHA so…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`YOUR_2CAPTCHA_KEY`、`YOUR_ANTICAPTCHA_KEY`、`YOUR_CAPSOLVER_KEY`",
+      "source_path": "skills/stealth-browser"
+    },
+    {
+      "id": "study-planner",
+      "name": "study-planner",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "当用户需要制定学习计划、备考计划、拆解复习目标时使用。输入目标+截止日+每日时长，输出每天可执行的学习计划，支持雅思/考研/期末复习等场景。",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/study-planner"
+    },
+    {
+      "id": "travel-cn",
+      "name": "travel-cn",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "旅行信息查询 - 去哪儿/携程/飞猪数据查询（Expedia 中国版）",
+      "prerequisites": "需要 12306 账号登录",
+      "source_path": "skills/travel-cn"
+    },
+    {
+      "id": "vip-skill",
+      "name": "vip-skill",
+      "category": "research-knowledge",
+      "category_label": "搜索 / 研究 / 知识",
+      "description": "唯品会（vip.com）电商服务技能包（vipshop-skills），整合唯品会搜索、商品查询、活动查询、图片搜索等多项购物服务，是一套完整的唯品会购物 AI 助手解决方案。当…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/vip-skill"
+    },
+    {
+      "id": "fintech-engineer",
+      "name": "fintech-engineer",
+      "category": "finance-data",
+      "category_label": "数据 / 金融 / 股票",
+      "description": "Expert fintech engineer specializing in financial systems, regulatory compliance (PCI …",
+      "prerequisites": "无",
+      "source_path": "skills/fintech-engineer"
+    },
+    {
+      "id": "qcc-company",
+      "name": "qcc-company",
+      "category": "finance-data",
+      "category_label": "数据 / 金融 / 股票",
+      "description": "通过企查查 Connector 查询中国境内企业的工商信息、股权结构、高管人员、财务数据、对外投资、历史变更、上市信息、分支机构、联系方式、开票信息及企业身份核验。当用户的请求涉…",
+      "prerequisites": "需要配置/启用 MCP 连接器",
+      "source_path": "skills/qcc-company"
+    },
+    {
+      "id": "stock-analysis",
+      "name": "stock-analysis",
+      "category": "finance-data",
+      "category_label": "数据 / 金融 / 股票",
+      "description": "Analyze stocks and cryptocurrencies using Yahoo Finance data. Supports portfolio manag…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；需要环境变量：`AUTH_TOKEN`",
+      "source_path": "skills/stock-analysis"
+    },
+    {
+      "id": "us-stock-analysis",
+      "name": "us-stock-analysis",
+      "category": "finance-data",
+      "category_label": "数据 / 金融 / 股票",
+      "description": "Comprehensive US stock analysis including fundamental analysis (financial metrics, bus…",
+      "prerequisites": "无",
+      "source_path": "skills/us-stock-analysis"
+    },
+    {
+      "id": "westock-data",
+      "name": "westockdata",
+      "category": "finance-data",
+      "category_label": "数据 / 金融 / 股票",
+      "description": "查询A股、港股、美股个股/指数/ETF的详细数据，包括：K线/分时、财务报表（三大报表多期查询，支持跨市场批量对比）、资金流向、技术指标、筹码分析、股东结构、分红除权、业绩预告、…",
+      "prerequisites": "无",
+      "source_path": "skills/westock-data"
+    },
+    {
+      "id": "westockdata",
+      "name": "westockdata",
+      "category": "finance-data",
+      "category_label": "数据 / 金融 / 股票",
+      "description": "查询A股、港股、美股个股/指数/ETF的详细数据，包括：K线/分时、财务报表（三大报表多期查询，支持跨市场批量对比）、资金流向、技术指标、筹码分析、股东结构、分红除权、业绩预告、…",
+      "prerequisites": "无",
+      "source_path": "skills/westockdata"
+    },
+    {
+      "id": "12306-train-assistant",
+      "name": "12306-train-assistant",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "12306 查询与订票辅助技能，支持余票查询、经停站查询、中转换乘、候补查询与提交/取消、登录状态检查、密码登录与二维码登录、下单与支付链接获取；当用户提到火车票、高铁票、经停站…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要 12306 账号登录；需要登录 / OAuth / 扫码授权；需要环境变量：`KYFW_PASSWORD`",
+      "source_path": "skills/12306-train-assistant"
+    },
+    {
+      "id": "a-stock-data",
+      "name": "a-stock-data",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "A股全栈数据工具包 — 覆盖行情(mootdx+腾讯+百度K线)、研报(东财+同花顺+iwencai)、信号(同花顺热点+北向+龙虎榜+解禁+行业)、资金面(融资融券+大宗交易+…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`IWENCAI_API_KEY`、`IWENCAI_KEY`",
+      "source_path": "skills/a-stock-data"
+    },
+    {
+      "id": "academic-translation",
+      "name": "academic-translation",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "当用户需要学术论文中英互译、润色、Chinglish 修复时使用。三步法（直译→反思→雅化），公式/cite 零损伤，顶会术语库，双栏对照，不动原文件。",
+      "prerequisites": "无",
+      "source_path": "skills/academic-translation"
+    },
+    {
+      "id": "academic-tutor",
+      "name": "academic-tutor",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "当大学生问题目、需要苏格拉底式引导讲解、或论文写作指导时使用。不直接给答案，每轮三段式（引导问题→关键提示→下一步建议），数理化/编程/经管/文史哲全覆盖。",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/academic-tutor"
+    },
+    {
+      "id": "admapix",
+      "name": "admapix",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Optional bearer token for the AdMapix Deep Research service, if enabled for the accoun…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`ADMAPIX_API_KEY`、`ADMAPIX_DEEP_RESEARCH_TOKEN`、`YOUR_API_KEY`",
+      "source_path": "skills/admapix"
+    },
+    {
+      "id": "android-native-dev",
+      "name": "android-native-dev",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Android native application development and UI design guide. Covers Material Design 3, …",
+      "prerequisites": "无",
+      "source_path": "skills/android-native-dev"
+    },
+    {
+      "id": "caldav-calendar",
+      "name": "caldav-calendar",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Sync and query CalDAV calendars (iCloud, Google, Fastmail, Nextcloud, etc.) using vdir…",
+      "prerequisites": "无",
+      "source_path": "skills/caldav-calendar"
+    },
+    {
+      "id": "canvas-design",
+      "name": "canvas-design",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You sh…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/canvas-design"
+    },
+    {
+      "id": "caveman",
+      "name": "caveman",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": ">-",
+      "prerequisites": "无",
+      "source_path": "skills/caveman"
+    },
+    {
+      "id": "charity-finance-assistant",
+      "name": "charity-finance-assistant",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Nonprofit finance and receipt management assistant. Use when users need to organize do…",
+      "prerequisites": "无",
+      "source_path": "skills/charity-finance-assistant"
+    },
+    {
+      "id": "charity-writing-assistant",
+      "name": "charity-writing-assistant",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "当用户提到公益文书、项目申请、结项报告、传播计划、写文书（公益场景）、写报告（公益项目）、整理材料（公益机构）、捐赠人服务方案、肖像授权书、项目上线、平台申请时使用。⚠️ 不适用…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/charity-writing-assistant"
+    },
+    {
+      "id": "dingtalk-unified",
+      "name": "dingtalk-unified",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "钉钉 CLI 全能套件，基于官方 DingTalk Workspace CLI（dws）操作钉钉消息、群聊、通讯录、日历、待办、审批、考勤、日志、DING、AI 表格、钉钉文档、…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/dingtalk-unified"
+    },
+    {
+      "id": "email-daily-summary",
+      "name": "email-daily-summary",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Automatically logs into email accounts (Gmail, Outlook, QQ Mail, etc.) and generates d…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；需要环境变量：`BROWSER_USE_API_KEY`",
+      "source_path": "skills/email-daily-summary"
+    },
+    {
+      "id": "english-intensive-reader",
+      "name": "english-intensive-reader",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "\\|",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/english-intensive-reader"
+    },
+    {
+      "id": "flights-search",
+      "name": "flights",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Search flights via Google Flights. Find nonstop/connecting flights, filter by time and…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/flights-search"
+    },
+    {
+      "id": "flutter-dev",
+      "name": "flutter-dev",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Flutter cross-platform development guide covering widget patterns, Riverpod/Bloc state…",
+      "prerequisites": "无",
+      "source_path": "skills/flutter-dev"
+    },
+    {
+      "id": "gifgrep",
+      "name": "gifgrep",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`GIPHY_API_KEY`、`TENOR_API_KEY`",
+      "source_path": "skills/gifgrep"
+    },
+    {
+      "id": "gmail",
+      "name": "gmail",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Gmail API integration with managed OAuth. Read, send, and manage emails, threads, labe…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`MATON_API_KEY`、`YOUR_API_KEY`",
+      "source_path": "skills/gmail"
+    },
+    {
+      "id": "gog",
+      "name": "gog",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/gog"
+    },
+    {
+      "id": "grill-me",
+      "name": "grill-me",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Interview the user relentlessly about a plan or design until reaching shared understan…",
+      "prerequisites": "无",
+      "source_path": "skills/grill-me"
+    },
+    {
+      "id": "guizang-ppt-skill",
+      "name": "guizang-ppt-skill",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "生成横向翻页网页 PPT（单 HTML 文件），含 WebGL 背景、章节幕封、数据大字报、图片网格等模板。提供两种风格：① \"电子杂志 × 电子墨水\"（衬线 + 流体背景 + …",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/guizang-ppt-skill"
+    },
+    {
+      "id": "imap-smtp-email",
+      "name": "imap-smtp-email",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Read and send email via IMAP/SMTP. Check for new/unread messages, fetch content, searc…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/imap-smtp-email"
+    },
+    {
+      "id": "ios-application-dev",
+      "name": "ios-application-dev",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "\\|",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/ios-application-dev"
+    },
+    {
+      "id": "knowledge-framework-builder",
+      "name": "knowledge-framework-builder",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "\\|",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/knowledge-framework-builder"
+    },
+    {
+      "id": "landing-page-generator",
+      "name": "landing-page-generator",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Generate a complete, deployable landing page from a brief. Produces a single self-cont…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/landing-page-generator"
+    },
+    {
+      "id": "marketing-skills",
+      "name": "marketing-skills",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "TL;DR: 23 marketing playbooks (CRO, SEO, copy, analytics, experiments, pricing, launch…",
+      "prerequisites": "无",
+      "source_path": "skills/marketing-skills"
+    },
+    {
+      "id": "material-organizer",
+      "name": "material-organizer",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "\\|",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/material-organizer"
+    },
+    {
+      "id": "minimax-docx",
+      "name": "minimax-docx",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": ">",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/minimax-docx"
+    },
+    {
+      "id": "minimax-pdf",
+      "name": "minimax-pdf",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": ">",
+      "prerequisites": "无",
+      "source_path": "skills/minimax-pdf"
+    },
+    {
+      "id": "nano-pdf",
+      "name": "nano-pdf",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "prerequisites": "无",
+      "source_path": "skills/nano-pdf"
+    },
+    {
+      "id": "notebooklm-studio",
+      "name": "notebooklm-studio",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Import sources (URLs, YouTube, files, text) into Google NotebookLM and generate artifa…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/notebooklm-studio"
+    },
+    {
+      "id": "notion",
+      "name": "notion",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Notion API for creating and managing pages, databases, and blocks.",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`NOTION_KEY`",
+      "source_path": "skills/notion"
+    },
+    {
+      "id": "pptx-generator",
+      "name": "pptx-generator",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Generate, edit, and read PowerPoint presentations. Create from scratch with PptxGenJS …",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/pptx-generator"
+    },
+    {
+      "id": "react-native-dev",
+      "name": "react-native-dev",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "\\|",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/react-native-dev"
+    },
+    {
+      "id": "stock-analyzer",
+      "name": "stock-analyzer",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "全球股票综合分析工具。支持A股、港股、美股等东方财富覆盖的所有市场。根据用户输入的股票名称或代码，从东方财富网获取股票信息，进行基本面、新闻面、资金面三维分析，给出投资建议、买入…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/stock-analyzer"
+    },
+    {
+      "id": "taobao",
+      "name": "maishou",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "商品价格全网对比技能，获取商品在淘宝(Taobao)、天猫(TMall)、京东(JD.com)、拼多多(PinDuoDuo)、抖音(Douyin)、快手(KaiShou)的最优价…",
+      "prerequisites": "无",
+      "source_path": "skills/taobao"
+    },
+    {
+      "id": "teachany",
+      "name": "teachany",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "K-12 interactive courseware creation. Use for school-subject lesson pages, animations,…",
+      "prerequisites": "需要环境变量：`GH_TOKEN`",
+      "source_path": "skills/teachany"
+    },
+    {
+      "id": "trip-planner-generator",
+      "name": "trip-planner-generator",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "通过交互式问答帮助用户生成结构化的旅行行程计划，输出包含每日行程、预算明细、行前清单和注意事项的 Markdown 文档。在用户做旅行计划、行程规划、安排出行（travel pl…",
+      "prerequisites": "需要 12306 账号登录",
+      "source_path": "skills/trip-planner-generator"
+    },
+    {
+      "id": "tutor-skills",
+      "name": "tutor-skills",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Turn PDFs, docs, and codebases into Obsidian StudyVaults with structured notes, then q…",
+      "prerequisites": "无",
+      "source_path": "skills/tutor-skills"
+    },
+    {
+      "id": "wacli",
+      "name": "wacli",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli C…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/wacli"
+    },
+    {
+      "id": "weather-open-meteo",
+      "name": "weather-open-meteo",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "通过 open-meteo.com 公共 API 查询指定地点的当前天气和未来预报，无需 API key；当 open-meteo 请求失败时可降级使用 wttr.in。",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/weather-open-meteo"
+    },
+    {
+      "id": "web-deploy",
+      "name": "web-deploy",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "Build, preview, and deploy websites, web apps, and APIs using Vercel, Railway, GitHub …",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；需要环境变量：`SECRET_KEY`",
+      "source_path": "skills/web-deploy"
+    },
+    {
+      "id": "xurl",
+      "name": "xurl",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": "A Twitter research and content intelligence skill. Use to analyze Twitter profiles, th…",
+      "prerequisites": "无",
+      "source_path": "skills/xurl"
+    },
+    {
+      "id": "yt-competitive-analysis",
+      "name": "yt-competitive-analysis",
+      "category": "docs-office",
+      "category_label": "文档 / 办公 / 协作",
+      "description": ">-",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`YOUTUBE_API_KEY`",
+      "source_path": "skills/yt-competitive-analysis"
+    },
+    {
+      "id": "andonq",
+      "name": "andonq",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "AndonQ 腾讯云智能客服\"领域虾\" — 不切窗口、不排队，即刻获得腾讯云全产品线专业解答。支持工单查询（列表/详情/流水）、集团/MC 工单与需求单管理、腾讯云全产品线智能问…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/andonq"
+    },
+    {
+      "id": "aviation-weather",
+      "name": "aviation-weather",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Fetch aviation weather data (METAR, TAF, PIREPs) from aviationweather.gov. Use for fli…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/aviation-weather"
+    },
+    {
+      "id": "cos-vectors",
+      "name": "cos-vectors",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "腾讯云 COS 向量桶全功能管理技能。覆盖向量桶、索引、向量数据的全生命周期管理，包括创建/删除/查询向量桶、创建/管理索引、插入/查询/搜索/删除向量数据、策略管理等 16 个…",
+      "prerequisites": "需要环境变量：`COS_VECTORS_SECRET_KEY`",
+      "source_path": "skills/cos-vectors"
+    },
+    {
+      "id": "ctrip-wendao",
+      "name": "ctrip-wendao",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "当用户发起任意旅行相关问询时，包含但不限于：预订酒店、机票查询、火车票查询、景点推荐、寻找当地特色玩乐、目的地查询、行程规划、美食住宿攻略、签证、查询旅游攻略、获取旅行建议等场景…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`WENDAO_API_KEY`",
+      "source_path": "skills/ctrip-wendao"
+    },
+    {
+      "id": "edgeone-pages-deploy",
+      "name": "edgeone-pages-deploy",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Deploy frontend and full-stack projects to Tencent EdgeOne Pages using the EdgeOne CLI…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/edgeone-pages-deploy"
+    },
+    {
+      "id": "email-skill",
+      "name": "email-skill",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Email management and automation. Send, read, search, and organize emails across multip…",
+      "prerequisites": "需要环境变量：`EMAIL_PASSWORD`",
+      "source_path": "skills/email-skill"
+    },
+    {
+      "id": "futuapi",
+      "name": "futuapi",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "富途 OpenAPI 交易与行情助手。查询股票行情、K线、报价、快照、买卖盘、逐笔成交、分时数据；解析期权简写代码、查询期权链、期权到期日；执行买入/卖出/下单/撤单/改单；查询…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/futuapi"
+    },
+    {
+      "id": "haina-shopping-assistant",
+      "name": "haina-shopping-assistant",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "值得买开发的海纳购物管家，一款专业为用户提供来自全网与兴趣高度相关的、公允的AI消费决策支持工具。它支持四种消费决策模式：商品推荐（根据需求精准匹配合适的商品）、商品总结（对特定…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/haina-shopping-assistant"
+    },
+    {
+      "id": "idea-validator",
+      "name": "idea-validator",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Validate startup ideas using Hexa's Opportunity Memo framework and Perceived Created V…",
+      "prerequisites": "无",
+      "source_path": "skills/idea-validator"
+    },
+    {
+      "id": "ima-skills",
+      "name": "ima-skills",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "\\|",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`IMA_OPENAPI_APIKEY`",
+      "source_path": "skills/ima-skills"
+    },
+    {
+      "id": "imsg",
+      "name": "imsg",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
+      "prerequisites": "无",
+      "source_path": "skills/imsg"
+    },
+    {
+      "id": "install-futu-opend",
+      "name": "install-futu-opend",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Futu OpenD 安装助手。自动下载安装Futu OpenD 并升级 Python SDK。支持 Windows、MacOS、Linux。用户提到安装、下载、启动、运行、配置…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/install-futu-opend"
+    },
+    {
+      "id": "jiaozhen-factcheck",
+      "name": "jiaozhen-factcheck",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "事实查证工具，对输入内容的具体说法、资讯、事件或常识进行真实性、准确性、可靠性判断。当用户需要较真一下，查证问题或判断信息真伪、识别谣言、询问真假，是真的吗，真的假的，能否xxx…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/jiaozhen-factcheck"
+    },
+    {
+      "id": "legal-logic-analysis",
+      "name": "legal-logic-analysis",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Think through any legal situation like a lawyer. Issue spotting, jurisdiction, risk as…",
+      "prerequisites": "无",
+      "source_path": "skills/legal-logic-analysis"
+    },
+    {
+      "id": "markitdown-skill",
+      "name": "markitdown-skill",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Convert documents to Markdown using Microsoft's MarkItDown CLI (`markitdown`). Support…",
+      "prerequisites": "无",
+      "source_path": "skills/markitdown-skill"
+    },
+    {
+      "id": "md-to-pdf-cjk",
+      "name": "md-to-pdf-cjk",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Convert Markdown files to professional PDF documents with full CJK (Chinese/Japanese/K…",
+      "prerequisites": "无",
+      "source_path": "skills/md-to-pdf-cjk"
+    },
+    {
+      "id": "model-usage",
+      "name": "model-usage",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, in…",
+      "prerequisites": "无",
+      "source_path": "skills/model-usage"
+    },
+    {
+      "id": "pdfkit-py",
+      "name": "pdfkit-py",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Pure-Python PDF toolkit with 50 commands covering reading, editing, conversion, forms, en…",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/pdfkit-py"
+    },
+    {
+      "id": "peekaboo",
+      "name": "peekaboo",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+      "prerequisites": "无",
+      "source_path": "skills/peekaboo"
+    },
+    {
+      "id": "qq-email",
+      "name": "qq-email",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "QQ邮箱 IMAP receive and SMTP send via Node.js scripts; credentials read from env vars QQ_EM…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/qq-email"
+    },
+    {
+      "id": "skyline",
+      "name": "skyline",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "WeChat Mini Program Skyline rendering engine. Use when developing with Skyline renderer, …",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/skyline"
+    },
+    {
+      "id": "tapd-openapi",
+      "name": "tapd-openapi",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "TAPD OpenAPI skill，用于需求、缺陷、任务、迭代、Wiki、评论、工时、附件等 TAPD 平台操作。当用户提到「TAPD」「需求」「story」「缺陷」「bug」…",
+      "prerequisites": "需要环境变量：`TAPD_TOKEN`",
+      "source_path": "skills/tapd-openapi"
+    },
+    {
+      "id": "tdd",
+      "name": "tdd",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Test-driven development with red-green-refactor loop. Use when user wants to build fea…",
+      "prerequisites": "无",
+      "source_path": "skills/tdd"
+    },
+    {
+      "id": "tdesign-miniprogram",
+      "name": "tdesign-miniprogram",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "TDesign WeChat Mini Program UI component library by Tencent. Use when building WeChat …",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/tdesign-miniprogram"
+    },
+    {
+      "id": "tencent-esign-contract",
+      "name": "tencent-esign-contract",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "腾讯电子签合同AI助手，支持合同起草、审查、对比、法条法规检索。当用户提到起草合同、写合同、生成合同、审查合同、检查合同风险、合规审核、法务审查、对比合同、合同差异、版本比较、查…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；需要环境变量：`ESIGN_TOKEN`",
+      "source_path": "skills/tencent-esign-contract"
+    },
+    {
+      "id": "tencent-musician-skills",
+      "name": "tencent-musician-skills",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "腾讯音乐人智能分析助手（数据分析 + 宣推）。当用户提到以下任一类请求时触发：【数据分析类】分析数据、看播放趋势、歌曲表现、听众画像、数据洞察、粉丝构成、我的数据怎么样、分析这首…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/tencent-musician-skills"
+    },
+    {
+      "id": "tencent-news",
+      "name": "tencent-news",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "7×24 新闻资讯搜索工具，聚焦中国国内信息和国际热点。支持新闻搜索，包括热点新闻、早报晚报、实时资讯、领域新闻和天气信息查询。当用户需要搜索新闻、新闻热榜、新闻早晚报、订阅新闻…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/tencent-news"
+    },
+    {
+      "id": "tencent-rumor-refuter",
+      "name": "tencent-rumor-refuter",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "嘿！我是小P \\U0001F427，腾讯公司谣言辟谣辅助技能 有关腾讯公司的信息真真假假，我来帮你看看！ 可以通过以下方式唤醒我： (1) 直接呼叫\\\"小P\\\"或\\\"小p\\\"； …",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/tencent-rumor-refuter"
+    },
+    {
+      "id": "tencent-ssv-techforgood",
+      "name": "tencent-ssv-techforgood",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "专注公益机构数字化赋能的智能助手，围绕腾讯技术公益数字工具箱（techforgood.qq.com）为社会组织匹配免费或低成本数字化产品，支持需求诊断、产品推荐、申领指引、数字化…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/tencent-ssv-techforgood"
+    },
+    {
+      "id": "tencent-weather",
+      "name": "tencent-weather",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Weather lookup tool covering Chinese cities and counties via the tencent-news CLI. Use…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/tencent-weather"
+    },
+    {
+      "id": "tencent-yuanbao-gaokao-regional-passing-scores",
+      "name": "tencent-yuanbao-gaokao-regional-passing-scores",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "高考地区分数线信息检索助手。当用户询问各省份历年高考录取分数线、录取批次或对应排名时使用，支持按地区、年份、选科和批次查询，自动适配新老高考政策差异。",
+      "prerequisites": "无",
+      "source_path": "skills/tencent-yuanbao-gaokao-regional-passing-scores"
+    },
+    {
+      "id": "tencent-yuanbao-gaokao-score-to-rank-lookup",
+      "name": "tencent-yuanbao-gaokao-score-to-rank-lookup",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "高考一分一段信息检索助手，帮助考生根据分数查询全省排名位次，或根据位次估算对应分数区间，或提供一分一段表。",
+      "prerequisites": "无",
+      "source_path": "skills/tencent-yuanbao-gaokao-score-to-rank-lookup"
+    },
+    {
+      "id": "tencent-yuanbao-standard-search",
+      "name": "tencent-yuanbao-standard-search",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Search the web using TencentCloud Web Search API (WSA). Prioritize using it when you n…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`TENCENTCLOUD_WSA_APIKEY`",
+      "source_path": "skills/tencent-yuanbao-standard-search"
+    },
+    {
+      "id": "tencentcloud-cls",
+      "name": "tencentcloud-cls",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "腾讯云日志服务 CLS 技能。支持 CQL 日志检索、上下文查看、日志主题/日志集查看、机器组与机器状态查看、采集规则查看、日志直方图、指标采集与 PromQL 查询、告警策略与…",
+      "prerequisites": "需要环境变量：`TENCENTCLOUD_SECRET_ID`、`TENCENTCLOUD_SECRET_KEY`",
+      "source_path": "skills/tencentcloud-cls"
+    },
+    {
+      "id": "tencentcloud-cos",
+      "name": "tencentcloud-cos",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Credentials exist only in shell session environment variables; nothing written to disk",
+      "prerequisites": "需要环境变量：`TENCENT_COS_SECRET_KEY`、`TENCENT_COS_TOKEN`",
+      "source_path": "skills/tencentcloud-cos"
+    },
+    {
+      "id": "tencentmap-lbs-skill",
+      "name": "tencentmap-lbs-skill",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "腾讯地图位置服务，支持POI搜索、路径规划、旅游规划、周边搜索，轨迹数据可视化和地图数据可视化。⚠️ 强制行为：本 Skill 加载后，第一个动作必须是检查是否存在正式 Key（…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要环境变量：`TMAP_WEBSERVICE_KEY`",
+      "source_path": "skills/tencentmap-lbs-skill"
+    },
+    {
+      "id": "tencentmap-map-assistant",
+      "name": "tencentmap-map-assistant",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "腾讯位置服务·地图助手 Skill，一句自然语言调用腾讯地图全套能力，无需开发者账号、开箱即用。提供 AI 旅游攻略、地点搜索（含评分/人均/营业时间）、关键词提示、路线规划（驾…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/tencentmap-map-assistant"
+    },
+    {
+      "id": "tencentos-expert",
+      "name": "tencentos-expert",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "TencentOS Server 全栈运维诊断，根据用户的自然语言描述，自动识别需要的能力接口，查询能力实现，使用具体能力解决客户问题。覆盖磁盘空间/分区/文件系统/LVM/健康…",
+      "prerequisites": "可能需要启用对应 MCP / 连接器",
+      "source_path": "skills/tencentos-expert"
+    },
+    {
+      "id": "things-mac",
+      "name": "things-mac",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL schem…",
+      "prerequisites": "需要环境变量：`THINGS_AUTH_TOKEN`",
+      "source_path": "skills/things-mac"
+    },
+    {
+      "id": "wechat-article-pro",
+      "name": "wechat-article-pro",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "微信公众号文章发布专业版。功能：1)联网搜索热点信息 2)AI生成微信公众号封面图 3)撰写3000-5000字深度文章 4)使用公众号AI配图功能自动生成并上传封面 5)参考刘…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/wechat-article-pro"
+    },
+    {
+      "id": "wechat-article-search",
+      "name": "wechat-article-search",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "搜索微信公众号文章技能。通过微信搜索获取文章列表，覆盖科技/AI、社会热点、财经、教育、职场等各类中文资讯；可按关键词检索并返回标题、概要、发布时间、来源公众号与链接。当用户需要…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/wechat-article-search"
+    },
+    {
+      "id": "wechat-miniprogram",
+      "name": "wechat-miniprogram",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "WeChat Mini Program (微信小程序) development framework. Use when building WeChat mini apps wit…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录",
+      "source_path": "skills/wechat-miniprogram"
+    },
+    {
+      "id": "wechat-publisher",
+      "name": "wechat-publisher",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "一键发布 Markdown 到微信公众号草稿箱。基于 wenyan-cli，支持多主题、代码高亮、图片自动上传。",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权；需要环境变量：`WECHAT_APP_SECRET`",
+      "source_path": "skills/wechat-publisher"
+    },
+    {
+      "id": "wechatpay-basic-payment",
+      "name": "wechatpay-basic-payment",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "微信支付基础支付解决方案，涵盖支付、退款账单、分账、商户进件、开户意愿确认，提供选型/代码示例/业务速查/质量评估/排障五大能力。Use when user mentions \"…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/wechatpay-basic-payment"
+    },
+    {
+      "id": "wechatpay-product-coupon",
+      "name": "wechatpay-product-coupon",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "微信支付商品券接入解决方案，覆盖券类型选型、发券/核销/查询/退券/回调全链路，提供选型/示例代码/业务速查/质量评估/排障五大能力。Use when user mentions…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/wechatpay-product-coupon"
+    },
+    {
+      "id": "wecom-unified",
+      "name": "wecom-unified",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "企业微信 CLI 全能套件，覆盖通讯录、消息、文档、日程、会议、待办 6 大业务域。支持按姓名/别名查找联系人、收发消息（文本/图片/文件/语音/视频）、读取/创建/编辑文档（可…",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/wecom-unified"
+    },
+    {
+      "id": "xiaojia-free-marketing-pack",
+      "name": "xiaojia-free-marketing-pack",
+      "category": "tencent-wechat",
+      "category_label": "腾讯 / 微信 / 企微",
+      "description": "Optional local config path. Defaults to ~/.codebuddy/xiaojia-free-marketing-pack.json.",
+      "prerequisites": "需要微信/企微相关凭证或扫码登录；需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/xiaojia-free-marketing-pack"
+    },
+    {
+      "id": "12306",
+      "name": "12306",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Query China Railway 12306 for train schedules, remaining tickets, and station info. Us…",
+      "prerequisites": "需要 12306 账号登录",
+      "source_path": "skills/12306"
+    },
+    {
+      "id": "blogwatcher",
+      "name": "blogwatcher",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+      "prerequisites": "无",
+      "source_path": "skills/blogwatcher"
+    },
+    {
+      "id": "education",
+      "name": "education",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Generate study plans, quizzes, flashcards, review materials, track learning progress a…",
+      "prerequisites": "无",
+      "source_path": "skills/education"
+    },
+    {
+      "id": "fullstack-dev",
+      "name": "fullstack-dev",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "\\|",
+      "prerequisites": "需要登录 / OAuth / 扫码授权；需要环境变量：`JWT_SECRET`",
+      "source_path": "skills/fullstack-dev"
+    },
+    {
+      "id": "goal-tracker",
+      "name": "goal-tracker",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Track long-term goals with milestones, daily logging, and accountability. Use when use…",
+      "prerequisites": "无",
+      "source_path": "skills/goal-tracker"
+    },
+    {
+      "id": "habit-tracker",
+      "name": "habit-tracker",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Build habits with streaks, reminders, and progress visualization. Use when users want …",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/habit-tracker"
+    },
+    {
+      "id": "ozon-1688-uploader",
+      "name": "ozon-1688-uploader",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "将1688的商品铺货到俄罗斯电商平台Ozon（上架），通过Ozon官方API实现商品信息的上传和状态查询。适用于需要将单个1688的商品上架到Ozon的场景。触发词：上传到Ozo…",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）；需要登录 / OAuth / 扫码授权；需要环境变量：`ALPHASHOP_ACCESS_KEY`、`ALPHASHOP_SECRET_KEY`、`OZON_API_KEY`",
+      "source_path": "skills/ozon-1688-uploader"
+    },
+    {
+      "id": "shader-dev",
+      "name": "shader-dev",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Comprehensive GLSL shader techniques for creating stunning visual effects — ray marchi…",
+      "prerequisites": "无",
+      "source_path": "skills/shader-dev"
+    },
+    {
+      "id": "shopping-price-drop-coupon-scout",
+      "name": "shopping-price-drop-coupon-scout",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "监控用户指定商品的价格变动并汇总官方优惠券与促销信息，全程只读、不登录账号、不加购物车、不下单、不处理支付。当用户希望设置降价提醒、整理可用优惠券清单，或获取某商品/商家的促销汇…",
+      "prerequisites": "需要登录 / OAuth / 扫码授权",
+      "source_path": "skills/shopping-price-drop-coupon-scout"
+    },
+    {
+      "id": "songsee",
+      "name": "songsee",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+      "prerequisites": "无",
+      "source_path": "skills/songsee"
+    },
+    {
+      "id": "the-entrepreneurship-handbook",
+      "name": "the-entrepreneurship-handbook",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Q&A skill for entrepreneurs, managers, and business leaders. Triggers when users ask abou…",
+      "prerequisites": "无",
+      "source_path": "skills/the-entrepreneurship-handbook"
+    },
+    {
+      "id": "weather",
+      "name": "weather",
+      "category": "design-ui-map",
+      "category_label": "设计 / UI / 地图",
+      "description": "Get current weather and forecasts (no API key required).",
+      "prerequisites": "需要大模型 API Key（OpenAI/Anthropic 等）",
+      "source_path": "skills/weather"
+    },
+    {
+      "id": "open-novel-writing",
+      "name": "open-novel-writing",
+      "category": "other",
+      "category_label": "其他",
+      "description": "\\|",
+      "prerequisites": "无（可选 API/账号以增强能力）",
+      "source_path": "skills/open-novel-writing"
+    }
+  ]
+}
