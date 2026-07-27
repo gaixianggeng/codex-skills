@@ -131,6 +131,7 @@ def plan_payload(
         "destination": str(destination),
         "source_repository": source["repository"],
         "source_commit": source["commit"],
+        "source_notice": source["notice"],
         "selected": [item["id"] for item in selected],
         "existing": [item["id"] for item in existing],
     }
@@ -203,6 +204,7 @@ def print_plan(payload: dict[str, Any], as_json: bool) -> None:
         f"- 来源：{payload['source_repository']}@"
         f"{payload['source_commit']}"
     )
+    print(f"- 使用限制：{payload['source_notice']}")
     if payload["existing"]:
         print(f"- 已存在目录：{', '.join(payload['existing'])}")
 

@@ -45,6 +45,10 @@ cp -R skills/init-project-workspace ~/.codex/skills/
 
 ### 按需安装 WorkBuddy 公开市场 Skills
 
+> 来源与使用限制：本导航收录的第三方 Skill 均来源于 WorkBuddy 公开市场，
+> 并通过公开市场归档按需拉取。仅供个人研究与学习，不支持商用；本项目不提供
+> 任何第三方内容的商用授权。各 Skill 的版权和具体许可归原作者或相关权利人所有。
+
 先安装导航 Skill：
 
 ```bash
@@ -78,6 +82,6 @@ cp -R skills/workbuddy-skills-navigator ~/.codex/skills/
 ## 风险与优化
 
 - 仓库源码和 `~/.codex/skills/` 下的已安装副本可能产生版本漂移；以本仓库内容为源码基准。
-- WorkBuddy 导航中的第三方 Skill 不在本仓库二次打包；源码按固定提交从原归档按需下载，各项许可证和外部服务依赖需分别检查。
+- WorkBuddy 导航中的第三方 Skill 不在本仓库二次打包；源码按固定提交从公开市场归档按需下载，仅供个人研究与学习，不支持商用，各项许可证和外部服务依赖需分别检查。
 - 全量安装当前会写入 295 个 Skill，其中不少依赖 API Key、OAuth、登录或 MCP；优先按分类或单项安装。
 - 暂不增加复杂发布脚本或包管理机制。Skills 数量增多、手工同步成为真实问题后，再补充安装与同步工具。
