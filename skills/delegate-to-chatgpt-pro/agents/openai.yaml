@@ -1,0 +1,4 @@
+interface:
+  display_name: "委派给 ChatGPT Pro"
+  short_description: "通过 Codex 内置浏览器调度 ChatGPT Pro 并独立验收"
+  default_prompt: "使用 $delegate-to-chatgpt-pro 通过 @Browser 内置浏览器完成以下需求；你负责检查仓库、补全工程任务和验收标准、调度 ChatGPT Pro，并在本地独立验收：<直接描述需求>"
