@@ -7,8 +7,8 @@
 ## 目录约定
 
 - 每个 Skill 放在 `skills/<skill-name>/`。
-- 每个 Skill 必须包含合法的 `SKILL.md`；按需包含 `agents/`、`scripts/`、`references/` 和 `assets/`。
-- 仓库级说明放在根目录，不在单个 Skill 内增加无必要的 README、变更日志或重复文档。
+- 每个 Skill 必须包含合法的 `SKILL.md` 和简短的 `README.md`；按需包含 `agents/`、`scripts/`、`references/` 和 `assets/`。
+- 单个 Skill 的 `README.md` 控制在 300 字以内，只介绍用途、适用场景、调用方式和关键边界，不复制完整工作流；仓库级说明仍放在根目录。
 
 ## 修改要求
 
