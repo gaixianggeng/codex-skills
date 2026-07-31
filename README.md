@@ -23,6 +23,7 @@ codex-skills/
 
 | Skill | 用途 |
 | --- | --- |
+| [`delegate-to-chatgpt-pro`](skills/delegate-to-chatgpt-pro/) | 通过 Codex 内置浏览器委派复杂工程任务给 ChatGPT Pro，并由 Codex 独立审查与验收 |
 | [`init-project-workspace`](skills/init-project-workspace/) | 从当前会话提炼确认方案，初始化项目工作区并建立 GitHub 仓库 |
 | [`workbuddy-skills-navigator`](skills/workbuddy-skills-navigator/) | 浏览 295 个 WorkBuddy 公开市场 Skill，按全部、分类或单项预览并安装 |
 
