@@ -12,6 +12,7 @@ codex-skills/
 ├── README.md
 └── skills/
     └── <skill-name>/
+        ├── README.md
         ├── SKILL.md
         └── agents/
             └── openai.yaml
@@ -69,7 +70,7 @@ cp -R skills/workbuddy-skills-navigator ~/.codex/skills/
 
 ## 新增或更新 Skill
 
-1. 在 `skills/<skill-name>/` 中创建或修改 Skill。
+1. 在 `skills/<skill-name>/` 中创建或修改 Skill，并维护一份 300 字以内的简短 `README.md`。
 2. 使用 Codex 的 `skill-creator` 维护 `SKILL.md` 和 `agents/openai.yaml`。
 3. 运行校验：
 
