@@ -10,7 +10,7 @@ show_usage() {
     'Read one bounded task packet from stdin and run it with GPT-5.6 Luna.'
 }
 
-worker_effort='xhigh'
+worker_effort='max'
 worker_sandbox='read-only'
 worker_workdir="$PWD"
 
