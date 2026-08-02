@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codex Luna Worker"
+  short_description: "让 Sol 自动调度并验收 Luna Max 的执行任务"
+  default_prompt: "使用 $codex-luna-worker 按 auto 模式评估当前任务，主线程保持不变，必要时调用 Luna Max 并验收。"
+policy:
+  allow_implicit_invocation: true
