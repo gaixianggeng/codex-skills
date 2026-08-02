@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Luna Worker"
+  short_description: "把边界明确的任务安全路由给 GPT-5.6 Luna"
+  default_prompt: "使用 $codex-luna-worker 将这个边界明确的任务交给 Luna，并由主 Agent 验收结果。"
