@@ -1,0 +1,7 @@
+interface:
+  display_name: "Luna 操作 ChatGPT Pro"
+  short_description: "让 Luna Max 通过内置浏览器操作 ChatGPT Pro 并回传证据"
+  default_prompt: "使用 $luna-chatgpt-pro-operator 按主 Sol 提供的任务包，通过 @Browser 操作 ChatGPT Pro，并仅回传可审查的交付与证据。"
+
+policy:
+  allow_implicit_invocation: false
