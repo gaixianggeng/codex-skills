@@ -1,0 +1,4 @@
+interface:
+  display_name: "代码熵回收"
+  short_description: "用证据驱动的仓库减法收敛死代码、重复事实、过度设计与迁移残留"
+  default_prompt: "使用 $reclaim-code-entropy 审计当前仓库的代码熵，给出有证据、可验证的最小化简方案。"
