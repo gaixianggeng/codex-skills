@@ -1,6 +1,6 @@
 ---
 name: delegate-to-chatgpt-pro
-description: 将复杂工程任务委派给用户已登录的网页版 ChatGPT Pro，由 Codex 负责检查本地仓库、脱敏打包上下文、管理一个或多个外部对话、收集补丁，并在本地独立审查和验收。默认必须通过 Codex 内置浏览器（@Browser）使用 ChatGPT Pro，不得自动改用 Chrome；只有用户明确要求 Chrome 时才使用 @Chrome。用户明确提出“让 ChatGPT Pro 帮忙写代码/研究方案”“用 Codex 指挥 ChatGPT Pro”“双代理协作”或调用 `$delegate-to-chatgpt-pro` 时使用；不要因普通编码任务隐式上传源码。
+description: 将复杂工程任务或 GitHub PR 审查委派给用户已登录的网页版 ChatGPT Pro，由 Codex 负责核对本地与远端版本、选择 PR 链接或脱敏源码包、管理外部对话，并在本地独立审查和验收。默认必须通过 Codex 内置浏览器（@Browser）使用 ChatGPT Pro，不得自动改用 Chrome；只有用户明确要求 Chrome 时才使用 @Chrome。用户明确提出“让 ChatGPT Pro 帮忙写代码/研究方案”“让 Pro 审查 PR”“用 Codex 指挥 ChatGPT Pro”“双代理协作”或调用 `$delegate-to-chatgpt-pro` 时使用；不要因普通编码任务隐式上传源码。
 ---
 
 # 委派给 ChatGPT Pro
@@ -36,9 +36,10 @@ $delegate-to-chatgpt-pro 修复支付回调偶发重复入账的问题。
 
 1. 读取适用的 `AGENTS.md`、`CLAUDE.md`、README、依赖清单和架构文档。
 2. 检查当前分支、HEAD、Git 状态、未提交改动和必跑门禁。
-3. 保留用户现有改动；不要为获得“干净基线”而重置或覆盖文件。
-4. 根据用户的自然语言需求和仓库事实，自行整理目标、不可破坏的边界、交付物、测试方案和可执行验收标准。
-5. 判断外部协作是否值得。简单、局部、可直接验证的任务由 Codex 完成，并说明使用 Pro 的额外收益有限。
+3. 若仓库托管在 GitHub，使用 GitHub 连接器或 `gh` 只读解析当前分支对应的 PR，记录 canonical PR URL、base、远端 head OID、状态和检查结果；不要仅根据分支名拼接 URL。
+4. 保留用户现有改动；不要为获得“干净基线”而重置或覆盖文件。
+5. 根据用户的自然语言需求和仓库事实，自行整理目标、不可破坏的边界、交付物、测试方案和可执行验收标准。
+6. 判断外部协作是否值得。简单、局部、可直接验证的任务由 Codex 完成，并说明使用 Pro 的额外收益有限。
 
 ### 2. 设计委派边界
 
@@ -47,9 +48,25 @@ $delegate-to-chatgpt-pro 修复支付回调偶发重复入账的问题。
 - 每个对话只负责一个清晰结果，例如根因分析、迁移方案或独立安全审查；不要让多个对话同时修改相同文件。
 - Codex 保留集成、冲突处理、最终实现选择和验收责任。
 
-### 3. 准备最小上下文包
+### 3. 选择最小上下文通道
 
-优先只发送任务所需文件，不发送整个仓库。运行：
+GitHub PR 审查优先发送 canonical PR URL，不默认打包仓库。只有同时满足以下条件，才把 PR 链接视为完整审查上下文：
+
+- 任务是审查已有 PR，而不是让 Pro 修改尚未发布的本地代码；
+- 已只读确认 PR 的远端 head OID；
+- 本地工作树干净，且本地审查目标 HEAD 与 PR head OID 完全一致；
+- PR 页面能展示目标 base、完整 diff 和必要的检查结果。
+
+发送时同时写明 PR URL、base、head OID 和审查目标，并要求 Pro 先确认它实际读取到了 PR 文件列表与 diff。不能访问私有 PR、只能看到登录页、读取到旧版本或无法确认 head OID 时，立即停止基于链接推断，改用最小脱敏源码包。
+
+本地 HEAD 比 PR head 更新或工作树有未提交改动时，PR 链接只能作为基线。不得自动提交或推送来“补齐”PR，也不得声称 PR 包含本地差异。若用户要求审查当前本地状态，在发送 PR 链接的同时，附上只包含缺失提交或改动所涉及文件的最小脱敏源码包，并明确列出：
+
+- PR head OID；
+- 本地 HEAD 与 dirty 状态；
+- PR 未覆盖的提交范围或工作树差异；
+- 附件是完整目标文件还是补充差异。
+
+没有可用 PR、PR 无法访问、任务需要未发布源码，或 Pro 必须产出补丁时，优先只发送任务所需文件，不发送整个仓库。运行：
 
 ```bash
 python3 <skill-dir>/scripts/prepare_source_bundle.py \
@@ -61,7 +78,7 @@ python3 <skill-dir>/scripts/prepare_source_bundle.py \
 
 `--include` 可重复使用；需要进一步缩小时使用可重复的 `--exclude`。
 
-必须至少提供一个 `--include`。只有用户明确授权发送整个 Git 可见工作树时，才改用显式 `--all`；`--all` 与 `--include` 不能同时使用。
+必须至少提供一个 `--include`。只有用户明确授权发送整个 Git 可见工作树时，才改用显式 `--all`；`--all` 与 `--include` 不能同时使用。PR 已覆盖的文件无需在附件中重复发送，除非 Pro 无法访问 PR 或本地版本不同。
 
 脚本必须成功完成密钥扫描后才能上传。扫描只是一层高置信度防护，不能代替 Codex 对文件清单、业务数据和自定义凭据格式的人工审查。记录其 JSON 输出中的：
 
@@ -87,7 +104,7 @@ python3 <skill-dir>/scripts/prepare_source_bundle.py \
 
 ### 5. 向 Pro 发任务
 
-联系 Pro 前完整读取 [task-brief.md](references/task-brief.md)，由 Codex 自行填写模板并发送任务说明和必要附件。不要把空白模板交给用户补充。
+联系 Pro 前完整读取 [task-brief.md](references/task-brief.md)，由 Codex 根据任务选择首次委派或 GitHub PR 审查模板，自行填写并发送任务说明、PR 链接和必要附件。不要把空白模板交给用户补充。
 
 说明必须包括：
 
@@ -99,7 +116,7 @@ python3 <skill-dir>/scripts/prepare_source_bundle.py \
 - Pro 无法访问的本地或私有环境；
 - 禁止声称已经执行的操作。
 
-要求优先返回最小完整补丁、修改理由、测试建议、假设和未验证风险。不要让 Pro 自行扩大产品范围或引入不必要依赖。
+实现任务要求优先返回最小完整补丁、修改理由、测试建议、假设和未验证风险。纯 PR 审查只要求可操作 findings：按严重级别排序，包含文件与行号、触发条件、用户影响和测试缺口；没有阻断问题时明确写“未发现阻断问题”，不要为了显得完整而虚构问题或生成补丁。不要让 Pro 自行扩大产品范围或引入不必要依赖。
 
 ### 6. 等待和恢复
 
@@ -135,6 +152,7 @@ python3 <skill-dir>/scripts/prepare_source_bundle.py \
 将对后续维护有价值的设计结论、测试证据和风险写入仓库已有的文档位置；没有约定时不要为了留痕制造大量文件，至少在最终回复中持久记录：
 
 - Pro 对话链接；
+- GitHub PR URL、base、远端 head OID，以及它与本地 HEAD/dirty 状态是否一致；
 - 源码包 HEAD、dirty 状态、大小和 SHA-256；
 - 实际采用和放弃的方案；
 - 修改文件和行为；
