@@ -1,0 +1,3 @@
+interface:
+  display_name: "Skill 审查"
+  short_description: "检查 Skill 职责重叠、指令负担与执行边界，提供有证据的精简建议"
